@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+.react-tagsinput,
+.css-13cymwt-control {
+  padding: 6px;
+  /* background: #e5e7eb !important; */
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+
+.clamp-lines {
+  max-height: calc(4 * 1.5em); /* Number of lines * line-height */
+  line-height: 1.5em; /* Line height */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optional: Adds "..." at the end */
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.css-tj5bde-Svg {
+  color: black !important;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.react-tel-input {
+  display: flex;
+}
+.react-tel-input .form-control {
+  width: 100% !important;
+  padding: 14px 14px 14px 50px !important;
+  background-color: rgb(246 248 252) !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  color: black !important;
+}
+.react-tel-input .selected-flag.open:before {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.react-tel-input .form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* 
+
+
+ 
+ */
+.ql-container {
+  @apply !h-72 bg-gray-200;
+}
+
+/* side bar scroll  */
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #630599;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8813cc; /* Color of the handle on hover */
+}
+
+/* For Firefox */
+
+/* For the entire document */
+.slick-slide img {
+  height: 300px; /* Set your desired height */
+  object-fit: cover; /* This will crop the image to fit */
+  width: 100%; /* Make sure the width is full to maintain layout */
+}
+
+/* ai loader  */
+
+.loaderAI {
+  border: 8px solid rgba(255, 255, 255, 1); /* Light color for the outer border */
+  border-top: 8px solid #9c0eee; /* Color of the spinner */
+  border-radius: 50%;
+  width: 60px; /* Size of the spinner */
+  height: 60px; /* Size of the spinner */
+  animation: spin 1s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* range filter  */
+
+/* In your Tailwind CSS or custom CSS */
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #8813cc;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 5px solid #9c0eee !important;
+  position: relative;
+  top: -8px;
+  -webkit-appearance: none;
+  z-index: 99;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #9c0eee; /* Tailwind's red-500 */
+  border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #8813cc;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  top: -8px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 12px;
+  background: transparent;
+}
+
+.fr-toolbar.fr-top,
+.fr-second-toolbar {
+  border-radius: 0 !important;
+}
+.fr-second-toolbar:empty {
+  min-height: 0 !important;
+}
+.fr-box.fr-basic.fr-top .fr-wrapper {
+  background-color: rgba(231, 231, 231, 0.644);
+  min-height: 400px;
+}
+h2 {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 2px;
+}
+
+.details-of-job ul {
+  list-style: disc;
+}
+
+.details-of-job ul li:has(p) {
+  /* Apply text decoration to the li element */
+  text-decoration: none;
+}
+
+/* Remove the marker */
+.details-of-job ul li:has(p)::marker {
+  content: none;
+}
+p[data-f-id] {
+  display: none;
+}
+.details-of-job ul li {
+  padding-left: 5px;
+}
+
+.details-of-job ol li:has(p) {
+  /* Apply text decoration to the li element */
+  text-decoration: none;
+}
+
+/* Remove the marker */
+.details-of-job ol li {
+  text-decoration: dotted;
+  padding-left: 2px;
+}
+p[data-f-id] {
+  display: none;
+}
+[data-list="bullet"] {
+  padding-left: 2px;
+  /* Your CSS styles here */
+  list-style-type: disc; /* Ensures bullet points are applied */
+}
+
+.details-of-job ol li:has([data-list="bullet"])::marker {
+  /* Apply text decoration to the li element */
+  content: none;
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 248 252) !important;
+}
+
+/* double range slider  */
+
+/* src/DoubleRangeSlider.css */
