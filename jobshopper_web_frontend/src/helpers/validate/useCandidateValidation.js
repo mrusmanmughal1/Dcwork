@@ -35,7 +35,6 @@ const useCandidateValidation = () => {
     last_name,
     phone,
     dob,
-
     cvs?.length > 0,
     candidate_professional_skill,
     candidate_avatar_image,
